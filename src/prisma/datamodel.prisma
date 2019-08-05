@@ -1,0 +1,37 @@
+type Song {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  title: String!
+  description: String
+  url: String!
+  composer: String
+  conductedBy: String!
+}
+
+# type Song {
+#   id: ID! @id
+#   createdAt: DateTime! @createdAt
+#   title: String!
+#   description: String
+#   url: String!
+#   performance: Performance!
+#   composer: String
+#   conductedBy: Conductor!
+# }
+
+# type Performance {
+#   id: ID! @id
+#   createdAt: DateTime! @createdAt
+#   title: String!
+#   year: String!
+#   season: String!
+#   description: String
+#   pieces: [Song!]!
+# }
+
+# type Conductor {
+#   id: ID! @id
+#   firstName: String!
+#   lastName: String!
+#   pieces: [Song!]!
+# }
